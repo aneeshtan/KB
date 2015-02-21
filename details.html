@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>نرم افزار استخدامی کاریاب . نت </title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+    
+<body>
+        
+<div id="detailsPage" data-role="page" data-add-back-btn="true">
+ 
+	<div data-role="header" data-position="fixed" id="header">
+		<div id="logo"  style="float:right;"><a href="http://www.karyab.net/"><img style="width: 243px; height: 77px" src="images/header.png"></a></div>
+		<div id="menu"  style="clear:both;padding:10px;">
+		<a href="/index.html">خانه</a>
+		<a href="/profile.html">کاربری شما </a>
+		<a href="/mostviewed.html">محبوبترین </a>
+		<a href="/contactus.html">تماس با ما</a>
+		</div>
+	
+	</div>
+
+	<div data-role="content" id="content">
+
+	<h1 style="font:18px tahoma;text-align:center;font-weight:700">  شرح جزئیات آگهی</h1>
+ 		 <div style='text-align:center;padding:20px;' id='loader'> <img src='images/preload.gif'>شکیبا باشید</div>
+ 
+		 <img id="logo"/>
+       <h3 id="title"></h3>
+       <p id="body"></p>
+       <p id="time"></p>
+    <ul id="actionList" data-role="listview" data-inset="true"></ul>
+
+    </div>		
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/employeelist.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/reportlist.js"></script>
+
+</body>
+
+</html>

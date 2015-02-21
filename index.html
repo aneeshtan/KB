@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>نرم افزار استخدامی کاریاب . نت </title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+
+</head>
+    
+<body>
+        
+<div id="employeeListPage" data-role="page" >
+ <div data-role="panel" id="mypanel">
+    <!-- panel content goes here -->
+</div><!-- /panel -->
+
+	<div data-role="header" data-position="fixed" id="header">
+		<div id="logo"  style="float:right;"><a href="http://www.karyab.net/"><img style="width: 243px; height: 77px" src="images/header.png"></a></div>
+		<div id="menu"  style="clear:both;padding:10px;">
+		<a href="/index.html">خانه</a>
+		<a href="/contactus.html" data-prefetch="true">کاربری شما</a> 
+		<a href="/mostviewed.html">محبوبترین </a>
+		<a href="/contactus.html">تماس با ما</a>
+		
+		
+</div>
+	</div>
+<div role="main" class="ui-content">
+	<div data-role="content">
+ 
+	<h1 style="font:18px tahoma;text-align:center;font-weight:700">   آخرین آگهی های استخدامی سایت کاریاب</h1>
+         <ul id="employeeList" data-role="listview" data-filter="true">
+		 <div style='text-align:center;padding:20px;' id='loader'> <img src='images/preload.gif'>شکیبا باشید</div>
+		 </ul>
+    </div>		
+
+</div>
+
+
+ <div data-role="footer">
+    <p>کپی رایت کامل این نرم افزار مربوط به فرشاد غضنفری می باشد </p>
+    <p>www.farshadghazanfari.com </p>
+  </div> 
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/employeelist.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/reportlist.js"></script>
+</body>
+
+</html>

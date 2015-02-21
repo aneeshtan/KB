@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>نرم افزار استخدامی کاریاب . نت </title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+    
+<body>
+        
+<div id="contactusPage" data-role="page" data-add-back-btn="true">
+ 
+	<div data-role="header" data-position="fixed" id="header">
+		<div id="logo"  style="float:right;"><a href="http://www.karyab.net/"><img style="width: 243px; height: 77px" src="images/header.png"></a></div>
+		<div id="menu"  style="clear:both;padding:10px;">
+		<a href="/index.html">خانه</a>
+		<a href="/profile.html">کاربری شما </a>
+		<a href="/mostviewed.html">محبوبترین </a>
+		<a href="/contactus.html">تماس با ما</a>
+		</div>
+	
+	</div>
+
+	<div data-role="content" id="content">
+
+
+  <div role="main" class="ui-content">
+  
+  <input type="submit" data-inline="true" data-theme="c" data-icon="back" data-iconpos="left" value="برگشت" data-mini="true">
+
+   
+    
+  
+
+  <div data-controltype="htmlblock"><div style="margin: 0; font: 12px tahoma; margin-top: 5px; text-align: justify; color: #656565;direction:rtl;">
+        				<h3>تماس با ما </h3><div style="line-height:25px;padding:10px;"><p>
+	شماره تماس :&nbsp; 08334238671</p>
+<p>
+	همراه :&nbsp; 09189301720&nbsp; ( حتی المقدور از طریق وایبر )</p>
+<p>
+	تماس از طریق اسکایپ :&nbsp; karyab.net</p>
+<p>
+	آدرس پستی :&nbsp; استان کرمانشاه - شهرستان کرمانشاه - شهرک نصر - بلوک 16 قطعه 4</p>
+<p>
+	کد پستی : 6717718676</p>
+<p>
+	ارسال پیامک&nbsp; :&nbsp; 30008304555555</p>
+<p>
+
+
+</p></div></div>
+</div>
+    <div id="googlemapsjs1" class="google-map" style="width: 288px; height: 200px; margin-left: auto; margin-right: auto"></div>
+    <script type="text/javascript">
+
+        window.CodiqaControls && window.CodiqaControls.register('googlemaps
+                ', 'googlemapsjs1 ', { 
+          ready: function(control) {
+
+            control.options = {
+              zoom: 8,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            control.el = document.getElementById(control._id);
+            control.map = new google.maps.Map(control.el, control.options);
+
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode( { 'address ': 'کرمانشاه '}, function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK) {
+
+                var marker = new google.maps.Marker({
+                    map: control.map,
+                    position: results[0].geometry.location
+                });
+                control.center = results[0].geometry.location;
+                control.map.setCenter(control.center);
+              }
+            });
+          
+        }});
+
+    </script>
+
+<h3>فرم تماس ایمیل </h3>
+
+  <div class="ui-field-contain" data-controltype="textinput">
+    <label for="textinput1">نام و نام خانوادگی</label>
+    <input name="" id="textinput1" placeholder="" value="" type="text">
+  </div>
+
+  <div class="ui-field-contain" data-controltype="textinput">
+    <label for="textinput2">ایمیل</label>
+    <input name="" id="textinput2" placeholder="" value="" type="text">
+  </div>
+
+  <div class="ui-field-contain" data-controltype="textinput">
+    <label for="textinput3">شماره همراه</label>
+    <input name="" id="textinput3" placeholder="" value="" type="text">
+  </div>
+
+  <div class="ui-field-contain" data-controltype="textarea">
+    <label for="textarea1">پیام شما </label>
+    <textarea name="" id="textarea1" placeholder=""></textarea>
+  </div>
+
+  <form action="">
+    
+  
+  <input type="submit" data-icon="info" data-iconpos="left" value="ارسال ">
+</form>
+</div>
+
+    </div>		
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/employeelist.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/reportlist.js"></script>
+
+</body>
+
+</html>
