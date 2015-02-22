@@ -2,24 +2,34 @@
 <html>
 <head>
 <title>نرم افزار استخدامی کاریاب . نت </title>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
-<link rel="stylesheet" href="css/styles.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>    
+				<script>
+		$(document).on('pagebeforeshow', '#employeeListPage', function(){ 
+    console.log("init");
+});
+		</script>
 </head>
     
 <body>
-        
-<div id="detailsPage" data-role="page" data-add-back-btn="true">
  
-	<div data-role="header" data-position="fixed" id="header">
-		<div id="logo"  style="float:right;"><a href="http://www.karyab.net/"><img style="width: 243px; height: 77px" src="images/header.png"></a></div>
-		<div id="menu"  style="clear:both;padding:10px;">
-		<a href="/index.html">خانه</a>
-		<a href="/profile.html">کاربری شما </a>
-		<a href="/mostviewed.html">محبوبترین </a>
-		<a href="/contactus.html">تماس با ما</a>
-		</div>
-	
+<div id="employeeListPage" data-role="page" >
+  <div data-role="panel" id="mypanel" data-position="left" data-display="overlay">
+ 				<a href="/index.html" data-role="button">خانه</a>
+		<a href="/contactus.html" data-role="button">کاربری شما</a> 
+		<a href="/mostviewed.html" data-role="button">محبوبترین </a>
+		<a href="/contactus.html" data-role="button">تماس با ما</a>
+            </div>           
+
+	 <div data-theme="b" data-role="header" data-position="fixed">
+		<div id="logo"  style="float:right;"><img style="width: 128px; height: 40px" src="images/logo.png"></div>
+		<div id="menu"  style="float:left;padding:10px;">
+		               <a href="#mypanel" data-role="button" data-icon="bars"> بیشتر  </a>
+					   </div>
 	</div>
 
 	<div data-role="content" id="content">
@@ -34,15 +44,18 @@
     <ul id="actionList" data-role="listview" data-inset="true"></ul>
 
     </div>		
+ 
 
-</div>
+ <div data-role="footer">
+   <center> <p>کپی رایت کامل این نرم افزار مربوط به فرشاد غضنفری می باشد </p>
+    <p>www.farshadghazanfari.com </p>
+	</center>
+  </div> 
 
-<script src="js/jquery.js"></script>
-<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+</div> 
+
 <script src="js/employeelist.js"></script>
 <script src="js/employeedetails.js"></script>
-<script src="js/reportlist.js"></script>
-
 </body>
 
 </html>

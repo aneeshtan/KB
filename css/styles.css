@@ -18,13 +18,13 @@
 #employeeList h4 {
 	direction:rtl;text-align:right;font:tahoma 14px;
 }
-#employeeList img {
+#employeeList li img {
 	direction:rtl;text-align:right;font:tahoma 14px;float:right;
 }
 #header {
  background:white;
-}
-#menu {direction:rtl;text-align:right;}
-#menu a {
-padding:5px; border:1px solid gray;background:#C4FF22;border-radius : 15px;color:black;text-decoration:none;margin:5px;font:11px tahoma;
+} 
+
+.ui-icon-myapp-gps {
+	background-image: url("images/gps.png");
 }
