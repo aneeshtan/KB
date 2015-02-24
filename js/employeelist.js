@@ -13,7 +13,7 @@ function getEmployeeList() {
 		employees = data.items;
 		$.each(employees, function(index, employee) {
 			$('#employeeList').append('<li><a href="details.html?sid=' + employee.sid + '">' +
-					'<h4 style="direction:rtl;text-align:center;font:14px tahoma;font-weight:700;">' + employee.title + ' </h4> <p> <img src="images/logo.png"/>  بازدید  ' + employee.counter + ' </p></a></li>');
+					'<h4 style="direction:rtl;text-align:center;font:14px tahoma;font-weight:700;">' + employee.title + ' </h4> <p> <img width="128px" height="40px" src="images/logo.png"/>  بازدید  ' + employee.counter + ' </p></a></li>');
 		});
 		$('#employeeList').listview('refresh');
 	});
