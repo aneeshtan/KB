@@ -17,5 +17,5 @@ jQuery(document).ready(function($) {
 	 	
 	}
 
-    $("#zone").append( " "+ trn_district );
+    $("#zone").append( "شهر "+ trn_district );
 });

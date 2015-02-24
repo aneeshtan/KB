@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>نرم افزار استخدامی کاریاب . نت </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>    
+				<script>
+		$(document).on('pagebeforeshow', '#detailsPage', function(){ 
+    console.log("init");
+});
+		</script>
+		<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+		<script src="js/geoscript.js"></script>
+</head>
+    
+<body>
+ 
+<div id="contactusPage" data-role="page" data-add-back-btn="true">
+  <div data-role="panel" id="mypanel" data-position="right" data-display="overlay">
+ 				
+		<a href="addagahi.html" data-role="button"  data-icon="plus"  data-iconpos="right" style='background:#D8ECF2'  rel="external" >  اضافه کردن آگهی  </a>
+ 		<a href="#" data-role="button"   data-icon="myapp-gps" data-iconpos="right" id="zone" rel="external"></a>
+ 		<a href="index.html" data-role="button" data-icon="home"  data-iconpos="right" rel="external">همه آگهی ها </a> 
+		<a href="favagahi.html" data-role="button" data-icon="star"  data-iconpos="right" rel="external"> نشان شده ها </a>
+		<a href="myagahi.html" data-role="button" data-icon="edit"  data-iconpos="right" rel="external"> آگهی های من </a>
+		<a href="vipagahi.html" data-role="button"  data-icon="info"  data-iconpos="right" rel="external"> آگهی های فوری </a>
+		<br>
+ 		<a href="contactus.html"  data-role="button"  data-icon="info"  data-iconpos="right"  rel="external"> تماس با ما </a>
+		<a href="aboutus.html" data-role="button"  data-icon="info"  data-iconpos="right" rel="external"> درباره ما </a>
+            </div>  
+			
+ <div data-role="panel" id="searchpanel" data-position="left" data-display="overlay">
+	<h3>جستجو در آگهی های استخدامی</h3>				
+	<form action='search.html' method='POST' >
+		<input type='text' name='keyword' id='' placeholder='جستجو برای ...' >
+		<input type='submit' value='جستجو'>
+	</form>
+	
+</div>   
+
+	 <div data-theme="b" data-role="header" data-position="fixed">
+ 		              <div style='float:right'> <a style="float:right" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="right" data-iconshadow="false">بیشتر</a>  <img style="float:right;width: 128px; height: 40px" src="images/logo.png"> </div>
+ 					   		<h1> افزودن آگهی	 </h1>
+							 <a style="float:right" href="#searchpanel" data-role="button" data-icon="search" data-iconpos="right" data-iconshadow="false">جستجو</a> 
+	</div>
+
+   
+
+	<div data-role="content" id="content">
+
+ 
+  <input type="submit" data-inline="true" data-theme="c" data-icon="back" data-iconpos="left" value="برگشت" data-mini="true">
+
+   
+    
+  
+
+  <div data-controltype="htmlblock">
+  <div style="margin: 0; font: 12px tahoma; margin-top: 5px; text-align: justify; color: #656565;direction:rtl;">
+
+  </div>
+  
+    </div>	
+
+	
+<div style="direction:rtl" ;text-align:right'=""><p>
+	&nbsp;</p>
+<p>
+	پیرو سیاست اطلاع رسانی سایت کاریاب دات نت و بنا به تصمیم تیم مدیریت سایت ، قرار بر این شده است که از این به بعد آگهی های استخدامی کارفرمایان محترم در نوبت اول آن به صورت رایگان در سایت درج شود.<br>
+	<br>
+	بنابراین کارفرمایان محترم می بایست آگهی استخدامی خود را در قالب متن&nbsp; <span style="font-weight: bold;">( نه عکس و نه فایل PDF )</span></p>
+<p>
+	در یک <span style="font-size: 14px;"><span style="color: rgb(255, 0, 0);"><strong>فایل WORD </strong></span></span>به ایمیل مدیریت سایت ارسال نمایند.<br>
+	<br>
+	ایمیل مدیریت : &nbsp;&nbsp;<span style="font-size: 22px;"><font color="#ff1493">info@Karyab.net</font></span></p>
+<p>
+	<br>
+	موضوع ( Subject ) ایمیل عبارت " <span style="color: #1E90FF;">درج آگهی استخدام </span>" باشد.<br>
+	&nbsp;</p>
+<p>
+	<br>
+	<span style="color: rgb(0, 0, 255);">تنها لازم است که نکاتی گانه زیر در این آگهی ها لحاظ گردد :</span></p>
+<p>
+	<span style="color: rgb(255, 0, 0);"><strong>1 - </strong></span>از پذیرش آگهی های بسیار کوتاه ( <strong>در حد چند جمله کوتاه و مختصر</strong> ) و آگهی هایی که&nbsp; نیروی کار مورد نظرشان فاقد نیاز به تحصیلات دانشگاهی باشد&nbsp; ( <strong>مثل آگهی های جذب ویزیتور ، فروشنده ، راننده و بازاریاب</strong> )&nbsp; <span style="color: rgb(255, 0, 0);">معذوریم</span> .</p>
+<p>
+	چون اساسا بر این عقیده هستیم که قشر فارغ التحصیل دانشگاهی هم اکنون مهم ترین&nbsp; و اساسی ترین&nbsp; قشر بیکار جامعه هستند .</p>
+<p>
+	<span style="color: rgb(255, 0, 0);"><strong>2 -</strong></span> در عنوان آگهی استخدامی حتی المقدور نام شرکت یا موسسه درج شود. در صورت منع این مورد ، حتما بدین فرمت ارسال شود :</p>
+<p>
+	<strong>مثلا </strong>:&nbsp; یک شرکت&nbsp; تولیدی در بخش تولید صنایع لوازم ساختمانی / یک شرکت&nbsp; صنعتی در بخش نفت و گاز و پتروشیمی / ...</p>
+<p>
+	&nbsp;</p>
+<p>
+	<span style="color: rgb(255, 0, 0);"><strong>3 - </strong></span>مختصری از تخصص مورد نیاز اعلام شود ( توضیحات رسا و کامل باشد )</p>
+<p>
+	<span style="color: rgb(255, 0, 0);"><strong>4 -</strong></span> <span style="font-size: 14px;"><span style="color: rgb(178, 34, 34);">محدوده جغرافیایی شرکت حتما باید اعلام شود . &nbsp;</span></span></p>
+<p>
+	<strong>مثلا :</strong> شهر شیراز ، غرب تهران ، جنوب اصفهان و ...</p>
+<p>
+	<span style="color: rgb(255, 0, 0);"><strong>5 -</strong></span> از پذیرفتن آگهی های استخدامی تکراری در بازه زمانی 60 روزه معذوریم . لطفا درخواست های تکراری را ارسال نفرمائید</p>
+<p>
+	<span style="color: rgb(255, 0, 0);"><span style="font-weight: bold;">6 -</span></span> تاریخ اتمام مهلت تماس در متن آگهی قید گردد .&nbsp; در غیر اینصورت ، مهلت آگهی 15 روزه در نظر گرفته خواهد شد .</p>
+<p>
+	<span style="color: rgb(255, 0, 0);"><span style="font-weight: bold;">7 - </span></span>آگهی از طریق ایمیلی که در متن آگهی درج گردیده است ، ارسال شود. ( <span style="color: #1E90FF;">نه ایمیل دیگری</span> )</p>
+<p>
+	<span style="color: rgb(255, 0, 0);"><span style="font-weight: bold;">8 -</span></span> سایت کاریاب دات نت از درج آگهی های استخدامی که در متن آن اشاره ای به واریز وجه ثبت نام شده است ، معذور است . چون این اقدام را شبهه برانگیز تلقی می نماید و اساسا با روح سیاست کاری کاریاب دات نت نیز هیچ سنخیتی ندارد.</p>
+<p>
+	9 -</p>
+<p>
+	<span style="color: rgb(0, 128, 0);"><strong>توجه : </strong></span></p>
+<p>
+	<span style="color: rgb(128, 0, 0);"><strong>تا اطلاع ثانوی از درج آگهی های استخدامی با مضمون " </strong></span><strong>استخدام بازاریاب ، فروشنده یا کارمند فروش</strong><span style="color: rgb(128, 0, 0);"><strong> " معذوریم.&nbsp; </strong></span><span style="color: rgb(255, 0, 0);"><strong>( به علت حجم بالای ارسالی این گونه آگهی ها)</strong></span></p>
+<br><br><p>
+	e</p>
+<br><i></i></div>	
+    </div>	
+
+
+	
+    </div>		
+
+
+  
+
+</body>
+
+</html>
