@@ -13,13 +13,13 @@
 	clear: both;
 }
 #employeeList li {
-	direction:rtl;text-align:right;font:tahoma 14px;
+	direction:rtl;text-align:right;font:tahoma 100%;
 }
 #employeeList h4 {
-	direction:rtl;text-align:right;font:tahoma 14px;
+	direction:rtl;text-align:right;font:tahoma 100%;
 }
 #employeeList li img {
-	direction:rtl;text-align:right;font:tahoma 14px;float:right;
+	direction:rtl;text-align:right;float:right;
 }
 #header {
  background:white;

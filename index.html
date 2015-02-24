@@ -14,29 +14,8 @@
 });
 		</script>
 		<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+		<script src="js/geoscript.js"></script>
 
-		<script type="text/javascript">
-jQuery(document).ready(function($) {
-    var district = geoplugin_city();
-	switch(district){
-	 case 'Mashhad':
-	 trn_district = "مشهد";
-	 break;
-	 
-	 case 'Tehran':
-	 trn_district = "تهران";
-	 break;
-	 
-	 default:
-	 trn_district = district;
-	 break;
-	 
-	 	
-	}
-
-    $("#zone").append( " "+ trn_district );
-});
-</script>
 		
 		
 </head>
@@ -47,17 +26,20 @@ jQuery(document).ready(function($) {
   <div data-role="panel" id="mypanel" data-position="right" data-display="overlay">
  				
 		<a href="#mypanel" data-role="button"  data-icon="plus"  data-iconpos="right" style='background:#D8ECF2' >  اضافه کردن آگهی  </a>
- 		<a href="/index.html" data-role="button"   data-icon="myapp-gps" data-iconpos="right" id="zone">شهر : </a>
- 		<a href="/contactus.html" data-role="button" data-icon="home"  data-iconpos="right" >همه آگهی ها </a> 
-		<a href="/mostviewed.html" data-role="button" data-icon="star"  data-iconpos="right"> نشان شده ها </a>
-		<a href="/contactus.html" data-role="button" data-icon="edit"  data-iconpos="right" > آگهی های من </a>
-		<a href="/contactus.html" data-role="button"  data-icon="info"  data-iconpos="right"> آگهی های فوری </a>
+ 		<a href="#" data-role="button"   data-icon="myapp-gps" data-iconpos="right" id="zone">شهر : </a>
+ 		<a href="#" data-role="button" data-icon="home"  data-iconpos="right" >همه آگهی ها </a> 
+		<a href="favagahi.html" data-role="button" data-icon="star"  data-iconpos="right"> نشان شده ها </a>
+		<a href="myagahi.html" data-role="button" data-icon="edit"  data-iconpos="right" > آگهی های من </a>
+		<a href="vipagahi.html" data-role="button"  data-icon="info"  data-iconpos="right"> آگهی های فوری </a>
+		<br>
+ 		<a href="contactus.html" > تماس با ما </a>
+		<a href="aboutus.html" data-role="button"  data-icon="info"  data-iconpos="right"> درباره ما </a>
             </div>  
 			
  <div data-role="panel" id="searchpanel" data-position="left" data-display="overlay">
 	<h3>جستجو در آگهی های استخدامی</h3>				
-	<form >
-		<input type='text' name='' id='' placeholder='جستجو برای ...' >
+	<form action='search.html' method='POST' >
+		<input type='text' name='keyword' id='' placeholder='جستجو برای ...' >
 		<input type='submit' value='جستجو'>
 	</form>
 	

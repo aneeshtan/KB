@@ -1,4 +1,4 @@
-$('#detailsPage').live('pageshow', function(event) {
+$('#detailsPage').on('pageshow', function(event) {
 	var sid = getUrlVars()["sid"];
 	$.getJSON(serviceURL + 'getemployee.php?sid='+sid, displayEmployee);
 });
@@ -7,11 +7,10 @@ function displayEmployee(data) {
 	var employee = data.item;
 	console.log(employee);
 	$('#loader').remove();
-	$('#logo').attr('src', 'images/header.png');
+	//$('#logo').attr('src', 'images/header.png');
 	$('#title').text(employee.title );
-	$('#body').html(employee.hometext);
-	$('#body').append(employee.bodytext);
-	$('#time').text(employee.time);
+	$('#body').html(employee.hometext + "<br>" + employee.bodytext);
+	$('#time').text("تاریخ ارسال آگهی : "+ employee.time);
  	 
   
 	

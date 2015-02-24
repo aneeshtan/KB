@@ -2,31 +2,57 @@
 <html>
 <head>
 <title>نرم افزار استخدامی کاریاب . نت </title>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
-<link rel="stylesheet" href="css/styles.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>    
+				<script>
+		$(document).on('pagebeforeshow', '#detailsPage', function(){ 
+    console.log("init");
+});
+		</script>
+		<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+		<script src="js/geoscript.js"></script>
 </head>
     
 <body>
-        
-<div id="contactusPage" data-role="page" data-add-back-btn="true">
  
-	<div data-role="header" data-position="fixed" id="header">
-		<div id="logo"  style="float:right;"><a href="http://www.karyab.net/"><img style="width: 243px; height: 77px" src="images/header.png"></a></div>
-		<div id="menu"  style="clear:both;padding:10px;">
-		<a href="/index.html">خانه</a>
-		<a href="/profile.html">کاربری شما </a>
-		<a href="/mostviewed.html">محبوبترین </a>
-		<a href="/contactus.html">تماس با ما</a>
-		</div>
+<div id="contactusPage" data-role="page" data-add-back-btn="true">
+ <div data-role="panel" id="mypanel" data-position="right" data-display="overlay">
+ 				
+		<a href="#mypanel" data-role="button"  data-icon="plus"  data-iconpos="right" style='background:#D8ECF2' >  اضافه کردن آگهی  </a>
+ 		<a href="#" data-role="button"   data-icon="myapp-gps" data-iconpos="right" id="zone">شهر : </a>
+ 		<a href="#" data-role="button" data-icon="home"  data-iconpos="right" >همه آگهی ها </a> 
+		<a href="favagahi.html" data-role="button" data-icon="star"  data-iconpos="right"> نشان شده ها </a>
+		<a href="myagahi.html" data-role="button" data-icon="edit"  data-iconpos="right" > آگهی های من </a>
+		<a href="vipagahi.html" data-role="button"  data-icon="info"  data-iconpos="right"> آگهی های فوری </a>
+		<br>
+ 		<a href="contactus.html" data-role="button"  data-icon="info"  data-iconpos="right"> تماس با ما </a>
+		<a href="aboutus.html" data-role="button"  data-icon="info"  data-iconpos="right"> درباره ما </a>
+        </div>  
+			
+ <div data-role="panel" id="searchpanel" data-position="left" data-display="overlay">
+	<h3>جستجو در آگهی های استخدامی</h3>				
+	<form action='search.html' method='POST' >
+		<input type='text' name='keyword' id='' placeholder='جستجو برای ...' >
+		<input type='submit' value='جستجو'>
+	</form>
 	
+</div>   
+
+	 <div data-theme="b" data-role="header" data-position="fixed">
+ 		              <div style='float:right'> <a style="float:right" href="#mypanel" data-role="button" data-icon="bars" data-iconpos="right" data-iconshadow="false">بیشتر</a>  <img style="float:right;width: 128px; height: 40px" src="images/logo.png"> </div>
+ 					   		<h1> نمایش شرح آگهی  </h1>
+							 <a style="float:right" href="#searchpanel" data-role="button" data-icon="search" data-iconpos="right" data-iconshadow="false">جستجو</a> 
 	</div>
+
+   
 
 	<div data-role="content" id="content">
 
-
-  <div role="main" class="ui-content">
-  
+ 
   <input type="submit" data-inline="true" data-theme="c" data-icon="back" data-iconpos="left" value="برگشت" data-mini="true">
 
    
@@ -114,13 +140,7 @@
 
     </div>		
 
-</div>
-
-<script src="js/jquery.js"></script>
-<script src="js/jquery.mobile-1.0rc1.min.js"></script>
-<script src="js/employeelist.js"></script>
-<script src="js/employeedetails.js"></script>
-<script src="js/reportlist.js"></script>
+  
 
 </body>
 
